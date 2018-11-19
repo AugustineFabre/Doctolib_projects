@@ -1,6 +1,6 @@
 def nombre_fonction(code):
     compteur=0
-    if len(code)>=3:
+    if len(code)>=4:
         for i in range (0,len(code)-3):
             elem1=code[i]
             elem2=code[i+1]
