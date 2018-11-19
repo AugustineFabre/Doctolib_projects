@@ -16,7 +16,8 @@ def nombre_variable(code):
                 n3=ligne[i+2]
                 mot=n1+n2+n3
                 if mot==' = ':
-                    compteur+=1
+                    if "'" not in ligne[0 :i+1]:
+                        compteur+=1
         if '|' in ligne:
             compteur+=1
     return compteur
