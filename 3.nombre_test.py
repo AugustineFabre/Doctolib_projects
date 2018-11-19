@@ -1,4 +1,4 @@
-def nombre_fonction(tests):
+def nombre_test(tests):
     compteur=0
     if len(tests)>=4:
         for i in range (0,len(tests)-3):
