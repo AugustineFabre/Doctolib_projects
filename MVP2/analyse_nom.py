@@ -1,5 +1,5 @@
-from MVP2.nom_function import *
-from MVP2.nom_variable import *
+from nom_fonction import *
+from nom_variable import *
 import re
 
 def seulement_alpha(list):

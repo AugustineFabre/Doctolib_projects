@@ -1,5 +1,7 @@
 import json
 
+
+
 from nombre_fonction import nombre_fonction
 functionCount = nombre_fonction(candidate_rb)
 
