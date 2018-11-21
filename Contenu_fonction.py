@@ -1,6 +1,8 @@
 def Contenu_fonction(code):
     liste=nomFunc(code)
-    nom_fonction=input('entrer un nom de fonction')
+    print(liste)
+    indice_fonction=input("entrer l'indice correspondant au titre de la fonction")
+    nom_fonction=liste[indice_fonction]
     liste_code=code.split('\n')
     taille=len(liste_code)
     if nom_fonction in liste:
