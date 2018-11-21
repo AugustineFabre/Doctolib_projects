@@ -11,7 +11,7 @@ def nomTest(string):
             line1 = line[(index0+6):]
 
             where = line1.index('"')
-            nom = line1[:where + 1]
+            nom = line1[:where]
 
             Funcs.append(nom)
     return Funcs
