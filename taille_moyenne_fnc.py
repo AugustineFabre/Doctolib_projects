@@ -24,3 +24,25 @@ def taille_moyenne_fnc(code):
     s=s/len(indices)
     return(s)
 
+
+def taille_moyenne_fonction(code):
+    liste_lignes_provisoire=code.split('def ')
+    s=0
+    for liste in liste_lignes_provisoire:
+        liste_fonction=liste.split('\n')
+        liste_fonction=liste_fonction[::-1]
+        i=0
+        p=1
+        while p==1:
+            if '  end' in liste_fonction[i]:
+               indice=i
+               p=0
+            else:
+                i=i+1
+         liste_fonction[1:i]
+        s+=len(liste_fonction)
+    s/=len(liste_lignes_provisoire)-1
+    return s
+
+
+
