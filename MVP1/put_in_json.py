@@ -1,7 +1,5 @@
 import json
 
-
-
 from nombre_fonction import nombre_fonction
 functionCount = nombre_fonction(candidate_rb)
 
@@ -19,3 +17,4 @@ print(MVP1)
 
 with open('../fichier_json/MVP1.json', 'w', encoding='utf-8') as f:
     json.dump(MVP1, f, indent=4)
+
