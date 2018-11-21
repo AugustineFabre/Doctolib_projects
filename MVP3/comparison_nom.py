@@ -1,3 +1,4 @@
+
 from MVP1.open_ruby import *
 candidate_a_rb = openRb('../fichier_ruby/event_candidate_a.rb.rb')
 candidate_b_rb = openRb('../fichier_ruby/event_candidate_b.rb.rb')
