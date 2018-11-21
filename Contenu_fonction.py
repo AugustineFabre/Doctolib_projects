@@ -9,7 +9,7 @@ def Contenu_fonction(code):
         for i in range(taille):
             if 'def' in liste_code[i] and nom_fonction in liste_code[i]:
                 resultat=""
-                p=i+1
+                p=i
                 while liste_code[p]!='  end\r':
                     resultat =resultat+ "\n" +liste_code[p]
                     p +=1
