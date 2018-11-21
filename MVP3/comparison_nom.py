@@ -1,11 +1,11 @@
 
-from MVP1.open_ruby import *
+from MVP1.open_ruby import openRb
 candidate_a_rb = openRb('../fichier_ruby/event_candidate_a.rb.rb')
 candidate_b_rb = openRb('../fichier_ruby/event_candidate_b.rb.rb')
 candidate_a_rb_test = openRb('../fichier_ruby/event_candidate_a_test.rb.rb')
 candidate_b_rb_test = openRb('../fichier_ruby/event_candidate_b_test.rb.rb')
 
-from MVP2.nom_function import nomFunc
+from MVP2.nom_fonction import nomFunc
 from MVP2.nom_variable import nom_variable
 from MVP2.nom_test import nomTest
 

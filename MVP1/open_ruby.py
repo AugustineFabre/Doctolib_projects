@@ -7,5 +7,5 @@ def openRb(filename): ## prend en entrée le chemin permettant d'accéder au fic
 
 candidate_rb = openRb('../fichier_ruby/event_candidate_a.rb.rb')
 candidate_rb_test = openRb('../fichier_ruby/event_candidate_a_test.rb.rb')
-print(candidate_rb_test)
+#print(candidate_rb_test)
 
