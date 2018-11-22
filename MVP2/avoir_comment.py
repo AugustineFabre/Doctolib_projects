@@ -1,36 +1,26 @@
 from MVP1.open_ruby import *
 candidate_rb = openRb('../fichier_ruby/event_candidate_a.rb.rb')
+from MVP2.contenu_fonc.py import *
+from MVP1.num_functions import *
 
 def taille_moyenne_fnc(code):
-    liste_code=code.split('\n')
-    taille=len(liste_code)
-    s=0
-    dic_s1 = []
-    dic_s2 = []
-    nombre_fonction=0
-    bad = 0
+    num_fncs=nombre_fonction(code)
+    taille_fncs=[]
+    somme=0
+    bad=0
+    for i in range(num_fncs):
+        contenu_fnc=Contenu_fonction(code,i).split('\n')
+        taille_fncs.append(len(contenu_fnc))
+        somme +=len(contenu_fnc)
+    moyenne=somme/len(taille_fncs)
+    for i in range(num_fncs):
+        if taille_fncs[i]>moyenne:
+            if "#" not in Contenu_fonction(code,i):
+                bad +=1
+    return (1-bad/num_fncs)*100
 
-    for i in range(taille):
-         if 'def ' in liste_code[i]:
-             nombre_fonction+=1
-             p = i+1
-             s1 = 0
-             while liste_code[p]!='  end':
-                 if ("end" not in liste_code[p]) or (liste_code[p].index("end") != liste_code[i].index("def")):
-                     s1 += 1
-                 p += 1
-             dic_s1.append(i)
-             dic_s2.append(s1)
-             s += s1
-   # print(dic_s1)
-    print(dic_s2)
-    taille_moy = s/(nombre_fonction)
-   # print(taille_moy)
-
-    for i in range(len(dic_s1)):
-        if dic_s2[i] > taille_moy and ("#" not in liste_code[dic_s1[i]-1]):
-            bad += 1
-    return (1-bad/nombre_fonction) *100
+print(taille_moyenne_fncs(code))
+ 
 
 
 point_avoir_comment = taille_moyenne_fnc(candidate_rb)
