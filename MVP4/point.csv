@@ -1,0 +1,17 @@
+critère,valeur
+variables bien nommées,94.73684210526316
+fonctions bien nommées,100.0
+bons cases in code,100
+bons cases in test,100
+noms diff des variables,93.75
+noms diff des fonctions,100.0
+noms diff des tests,100.0
+duplication de code,93.73720835038887
+duplication de test,82.75092936802974
+longeur de fonction,100.0
+similarité avec d'autres,100
+similarité des noms de fonctions,100
+similarité des noms de variables,100
+similarité des noms de tests,100
+commentaires pour les longues fonctions,70.0
+final,83.89912280701755
