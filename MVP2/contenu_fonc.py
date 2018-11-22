@@ -2,11 +2,9 @@ from MVP1.open_ruby import openRb
 candidate_rb = openRb('../fichier_ruby/event_candidate_a.rb.rb')
 from MVP2.nom_function import nomFunc
 
-def Contenu_fonction(code):
+def Contenu_fonction(code,indice):
     liste=nomFunc(code)
-    print(liste)
-    indice_fonction=input("entrer l'indice correspondant au titre de la fonction: ")
-    nom_fonction=liste[int(indice_fonction)]
+    nom_fonction=liste[indice]
     liste_code=code.split('\n')
     taille=len(liste_code)
     if nom_fonction in liste:
