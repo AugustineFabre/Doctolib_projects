@@ -1,0 +1,23 @@
+{
+    "identifiant": "05123985",
+    "nom": "Dupont",
+    "prenom": "Pierre",
+    "dateNaissance": "26/06/1992",
+    "lieuNaissance": "Paris",
+    "dateEntretien": "05/02/2018",
+    "lieuEntretien": "Gif-sur-Yvette",
+    "niveau": 83,
+    "fichiers": [
+        {
+            "nom": "code",
+            "functionCount": 10,
+            "commentCount": 0,
+            "variableCount": 16,
+            "nombre de duplication": 0
+        },
+        {
+            "nom": "test",
+            "testCount": 13
+        }
+    ]
+}
